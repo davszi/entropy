@@ -605,6 +605,7 @@ footer p {
     }
 }
 
+
 /* ===================================
    Reduced Motion
    =================================== */
@@ -619,3 +620,11 @@ footer p {
         scroll-behavior: auto !important;
     }
 }
+
+.veritasium-section { padding: 4rem 0; }
+.veritasium-frame { margin: 2rem 0; border-radius: 12px; overflow: hidden; }
+.veritasium-note { margin-top: 1.5rem; opacity: 0.9; font-style: italic; }
+
+.simulation-section { padding: 4rem 0; }
+.geogebra-frame { margin-top: 1.5rem; border-radius: 12px; overflow: hidden; }
+.simulation-note { margin-top: 1.5rem; opacity: 0.9; }
