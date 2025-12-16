@@ -123,11 +123,6 @@ nav {
    Mobile & Tablet
    =========================== */
 
-/* Scroll hint for horizontal nav */
-nav {
-    position: relative;
-}
-
 /* Right-side fade */
 nav::after {
     content: "";
