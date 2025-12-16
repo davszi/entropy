@@ -81,9 +81,9 @@ button:focus {
     outline-offset: 2px;
 }
 
-/* ===================================
+/* ===========================
    Navigation
-   =================================== */
+   =========================== */
 
 nav {
     position: sticky;
@@ -92,24 +92,39 @@ nav {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color-border);
     z-index: 50;
-    padding: var(--spacing-sm) 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: var(--spacing-sm);
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: var(--spacing-sm);
-    padding: 0 var(--spacing-sm);
 }
 
 .nav-list a {
-    color: var(--color-text-primary);
     text-decoration: none;
+    color: var(--color-text-primary);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: 4px;
-    transition: all var(--transition-fast);
     font-weight: 500;
 }
 
@@ -117,6 +132,42 @@ nav {
     background: var(--color-order);
     color: white;
 }
+
+/* ===========================
+   Mobile / Tablet Navigation
+   =========================== */
+
+@media (max-width: 768px) {
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        display: none;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav-list.open {
+        display: flex;
+    }
+
+    .nav-list li {
+        border-top: 1px solid var(--color-border);
+    }
+
+    .nav-list a {
+        padding: var(--spacing-sm);
+        text-align: center;
+    }
+}
+
 
 /* ===================================
    Container
@@ -628,3 +679,33 @@ footer p {
 .simulation-section { padding: 4rem 0; }
 .geogebra-frame { margin-top: 1.5rem; border-radius: 12px; overflow: hidden; }
 .simulation-note { margin-top: 1.5rem; opacity: 0.9; }
+
+.embed {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.embed iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* YouTube: 16:9 */
+.embed-video {
+    aspect-ratio: 16 / 9;
+}
+
+/* GeoGebra: taller, interactive */
+.embed-ggb {
+    aspect-ratio: 4 / 3;
+}
+
+/* Mobile tweak */
+@media (max-width: 480px) {
+    .embed-ggb {
+        aspect-ratio: 1 / 1;
+    }
+}

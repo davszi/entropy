@@ -40,29 +40,45 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Navigation -->
-    <nav aria-label="Main navigation">
-        <ul class="nav-list">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#definition">Definition</a></li>
-            <li><a href="#personal">Personal Meaning</a></li>
-            <li><a href="#visual">Visual Exploration</a></li>
-            <li><a href="#veritasium">Veritasium Insight</a></li>
-            <li><a href="#derivatives">Derivatives</a></li>
-            <li><a href="#reflection">Reflection</a></li>
-            <li><a href="#simulation">Simulation</a></li>
-        </ul>
-    </nav>
+     <nav aria-label="Main navigation">
+            <div class="nav-container">
+                <button class="nav-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                    ☰
+                </button>
+
+                <ul class="nav-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#definition">Definition</a></li>
+                    <li><a href="#personal">Personal</a></li>
+                    <li><a href="#visual">Visuals</a></li>
+                    <li><a href="#simulation">Simulation</a></li>
+                    <li><a href="#veritasium">Veritasium</a></li>
+                    <li><a href="#derivatives">Derivatives</a></li>
+                    <li><a href="#reflection">Reflection</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
 
     <main id="main-content">
-        <!-- Hero Section -->
+
+        <!-- Hero -->
         <section id="hero" class="hero-section">
             <div class="hero-content">
-                <h1 id="hero-title" class="hero-title">Entropy</h1>
+                <h1 class="hero-title">Entropy</h1>
                 <p class="hero-subtitle">The Inevitable March from Order to Chaos</p>
-                <p class="hero-description">A journey through thermodynamics, information theory, and the irreversible arrow of time</p>
+                <p class="hero-description">
+                    Thermodynamics, information theory, and the arrow of time
+                </p>
             </div>
+
             <div class="hero-image-container">
-                <img src="public/assets/hero-entropy-order-to-chaos.png" alt="Orderly shapes dissolving into chaotic particles" class="hero-image">
+                <img src="public/assets/hero-entropy-order-to-chaos.png"
+                     alt="Orderly shapes dissolving into chaotic particles"
+                     class="hero-image">
             </div>
         </section>
 
@@ -204,11 +220,10 @@
               Visually, it sits in the middle ground between order and randomness: structured, but endlessly unfolding.
             </p>
 
-            <div class="geogebra-frame">
+        <div class="embed embed-ggb">
               <iframe
                 src="https://www.geogebra.org/material/iframe/id/szyz52rn/width/1200/height/700"
-                height="700"
-                style="border:0; width:100%;"
+                style="border:0;"
                 allowfullscreen
                 loading="lazy"
                 title="GeoGebra simulation: rotating planes around central axes">
@@ -244,12 +259,11 @@
               elsewhere. The universe keeps score globally, not locally.
             </p>
 
-            <div class="veritasium-frame">
+            <div class="embed embed-video">
               <iframe
-                height="450"
                 src="https://www.youtube.com/embed/DxL2HoqLbyA"
                 title="Veritasium — Entropy, Engines, and Time’s Arrow"
-                style="border:0; width:100%;"
+                style="border:0;"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
                 loading="lazy">
@@ -389,7 +403,15 @@
         </section>
     </main>
 
-    <script src="./script.js"></script>
+     <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        toggle.addEventListener('click', () => {
+            const open = navList.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+    </script>
 </body>
 
 </html>
