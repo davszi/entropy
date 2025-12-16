@@ -80,52 +80,38 @@ button:focus {
     outline: 3px solid var(--color-order-light);
     outline-offset: 2px;
 }
-
 /* ===========================
-   Navigation
+   Navigation (All devices)
    =========================== */
 
 nav {
     position: sticky;
     top: 0;
+    z-index: 50;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color-border);
-    z-index: 50;
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.nav-toggle {
-    display: none;
-    font-size: 1.75rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    right: var(--spacing-sm);
-}
-
+/* Base nav list */
 .nav-list {
     list-style: none;
     display: flex;
     gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    margin: 0;
+    justify-content: center;
 }
 
+/* Links */
 .nav-list a {
+    white-space: nowrap;
     text-decoration: none;
     color: var(--color-text-primary);
     padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: 4px;
+    border-radius: 999px; /* pill style */
     font-weight: 500;
+    transition: background var(--transition-fast), color var(--transition-fast);
 }
 
 .nav-list a:hover {
@@ -134,40 +120,60 @@ nav {
 }
 
 /* ===========================
-   Mobile / Tablet Navigation
+   Mobile & Tablet
    =========================== */
+
+/* Scroll hint for horizontal nav */
+nav {
+    position: relative;
+}
+
+/* Right-side fade */
+nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0.95),
+        rgba(255, 255, 255, 0)
+    );
+}
+
+/* Left-side fade (only when scrolled) */
+nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.95),
+        rgba(255, 255, 255, 0)
+    );
+}
+
 
 @media (max-width: 768px) {
 
-    .nav-toggle {
-        display: block;
-    }
-
     .nav-list {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: white;
-        flex-direction: column;
-        display: none;
-        border-bottom: 1px solid var(--color-border);
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
     }
 
-    .nav-list.open {
-        display: flex;
-    }
-
-    .nav-list li {
-        border-top: 1px solid var(--color-border);
-    }
-
-    .nav-list a {
-        padding: var(--spacing-sm);
-        text-align: center;
+    .nav-list::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
     }
 }
-
 
 /* ===================================
    Container

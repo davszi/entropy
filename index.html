@@ -4,30 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An exploration of entropy: from thermodynamics to information theory, examining what disorder, randomness, and irreversibility mean in science, philosophy, and personal experience.">
-    <meta name="keywords" content="entropy, thermodynamics, information theory, disorder, chaos, second law, time's arrow, physics, philosophy">
+    <meta name="description"
+          content="An exploration of entropy: from thermodynamics to information theory, examining what disorder, randomness, and irreversibility mean in science, philosophy, and personal experience.">
+    <meta name="keywords"
+          content="entropy, thermodynamics, information theory, disorder, chaos, second law, time's arrow, physics, philosophy">
     <meta name="author" content="Student Research Project">
 
     <!-- Open Graph metadata for social sharing -->
     <meta property="og:title" content="Entropy: From Order to Chaos">
-    <meta property="og:description" content="A deep exploration of entropy across science, philosophy, and personal meaning">
+    <meta property="og:description"
+          content="A deep exploration of entropy across science, philosophy, and personal meaning">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./assets/hero-entropy-order-to-chaos.png">
 
     <!-- Structured data for SEO -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Entropy: From Order to Chaos",
-      "description": "An exploration of entropy from scientific, philosophical, and personal perspectives",
-      "author": {
-        "@type": "Person",
-        "name": "Student Researcher"
-      },
-      "keywords": "entropy, thermodynamics, information theory, disorder, chaos",
-      "articleSection": "Research"
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Entropy: From Order to Chaos",
+            "description": "An exploration of entropy from scientific, philosophical, and personal perspectives",
+            "author": {
+                "@type": "Person",
+                "name": "Student Researcher"
+            },
+            "keywords": "entropy, thermodynamics, information theory, disorder, chaos",
+            "articleSection": "Research"
+        }
     </script>
 
     <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
@@ -36,382 +39,433 @@
 </head>
 
 <body>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+<!-- Skip to main content for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Navigation -->
-     <nav aria-label="Main navigation">
-            <div class="nav-container">
-                <button class="nav-toggle"
-                    aria-label="Toggle navigation"
-                    aria-expanded="false">
-                    ☰
-                </button>
-
-                <ul class="nav-list">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#definition">Definition</a></li>
-                    <li><a href="#personal">Personal</a></li>
-                    <li><a href="#visual">Visuals</a></li>
-                    <li><a href="#simulation">Simulation</a></li>
-                    <li><a href="#veritasium">Veritasium</a></li>
-                    <li><a href="#derivatives">Derivatives</a></li>
-                    <li><a href="#reflection">Reflection</a></li>
-                </ul>
-            </div>
-        </nav>
+<!-- Navigation -->
+<nav aria-label="Main navigation">
+    <ul class="nav-list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#definition">Definition</a></li>
+        <li><a href="#personal">Personal</a></li>
+        <li><a href="#visual">Visuals</a></li>
+        <li><a href="#simulation">Simulation</a></li>
+        <li><a href="#veritasium">Veritasium</a></li>
+        <li><a href="#derivatives">Derivatives</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+    </ul>
+</nav>
 
 
+<main id="main-content">
 
-    <main id="main-content">
+    <!-- Hero -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Entropy</h1>
+            <p class="hero-subtitle">The Inevitable March from Order to Chaos</p>
+            <p class="hero-description">
+                Thermodynamics, information theory, and the arrow of time
+            </p>
+        </div>
 
-        <!-- Hero -->
-        <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1 class="hero-title">Entropy</h1>
-                <p class="hero-subtitle">The Inevitable March from Order to Chaos</p>
-                <p class="hero-description">
-                    Thermodynamics, information theory, and the arrow of time
-                </p>
-            </div>
+        <div class="hero-image-container">
+            <img src="public/assets/hero-entropy-order-to-chaos.png"
+                 alt="Orderly shapes dissolving into chaotic particles"
+                 class="hero-image">
+        </div>
+    </section>
 
-            <div class="hero-image-container">
-                <img src="public/assets/hero-entropy-order-to-chaos.png"
-                     alt="Orderly shapes dissolving into chaotic particles"
-                     class="hero-image">
-            </div>
-        </section>
+    <!-- Definition Section -->
+    <section id="definition" class="definition-section" aria-labelledby="definition-title">
+        <div class="container">
+            <h2 id="definition-title">What is Entropy?</h2>
 
-        <!-- Definition Section -->
-        <section id="definition" class="definition-section" aria-labelledby="definition-title">
-            <div class="container">
-                <h2 id="definition-title">What is Entropy?</h2>
-
-                <article class="definition-card">
-                    <h3>Scientific Definition</h3>
-                    <div class="definition-content">
-                        <div class="definition-text">
-                            <h4>Thermodynamics</h4>
-                            <p><strong>Entropy</strong> (from Greek <em>en-</em> "in" + <em>tropē</em> "transformation") is a fundamental concept in physics that measures the degree of disorder or randomness in a system. According to the <strong>Second Law of Thermodynamics</strong>, the total entropy of an isolated system can never decrease over time—it either increases or remains constant.</p>
-                            <blockquote>
-                                "The entropy of the universe tends to a maximum." — Rudolf Clausius, 1865
-                            </blockquote>
-                            <p>In practical terms, this means that energy naturally disperses and systems naturally move toward states of greater disorder. A hot cup of coffee cools down, never spontaneously heating up. A broken glass doesn't reassemble itself. Time flows in one direction.</p>
-                        </div>
-                        <div class="definition-image">
-                            <img src="public/assets/thermodynamics-heat-dispersal.png" alt="Heat spreading from a hot object into its surroundings" loading="lazy">
-                        </div>
+            <article class="definition-card">
+                <h3>Scientific Definition</h3>
+                <div class="definition-content">
+                    <div class="definition-text">
+                        <h4>Thermodynamics</h4>
+                        <p><strong>Entropy</strong> (from Greek <em>en-</em> "in" + <em>tropē</em> "transformation") is
+                            a fundamental concept in physics that measures the degree of disorder or randomness in a
+                            system. According to the <strong>Second Law of Thermodynamics</strong>, the total entropy of
+                            an isolated system can never decrease over time—it either increases or remains constant.</p>
+                        <blockquote>
+                            "The entropy of the universe tends to a maximum." — Rudolf Clausius, 1865
+                        </blockquote>
+                        <p>In practical terms, this means that energy naturally disperses and systems naturally move
+                            toward states of greater disorder. A hot cup of coffee cools down, never spontaneously
+                            heating up. A broken glass doesn't reassemble itself. Time flows in one direction.</p>
                     </div>
-                </article>
-
-                <article class="definition-card">
-                    <div class="definition-content reverse">
-                        <div class="definition-image">
-                            <img src="public/assets/information-entropy-decay.png" alt="Digital data breaking into noise" loading="lazy">
-                        </div>
-                        <div class="definition-text">
-                            <h4>Information Theory</h4>
-                            <p>Claude Shannon introduced <strong>information entropy</strong> in 1948 as a measure of uncertainty or unpredictability in information content. In this context, entropy quantifies the average amount of information needed to describe a random variable.</p>
-                            <p>High entropy means high unpredictability—like a truly random sequence of coin flips. Low entropy means predictability—like a message with repeating patterns. This concept is fundamental to data compression, cryptography, and understanding communication systems.</p>
-                            <p class="formula" role="img" aria-label="Shannon entropy formula: H equals negative sum of probability times log probability">H = -Σ p(x) log p(x)</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="definition-card">
-                    <h3>Philosophical Implications</h3>
-                    <div class="definition-content">
-                        <div class="definition-text">
-                            <h4>Time's Arrow</h4>
-                            <p>Entropy provides a thermodynamic arrow of time—a fundamental asymmetry that distinguishes past from future. While the microscopic laws of physics are time-reversible, entropy gives us a macroscopic direction: the future is the direction of increasing entropy.</p>
-                            <p>This raises profound questions: Why did the universe begin in a low-entropy state? Is the heat death of the universe—maximum entropy—inevitable? What does this mean for free will, consciousness, and the nature of existence itself?</p>
-                        </div>
-                        <div class="definition-image">
-                            <img src="public/assets/times-arrow-irreversibility.png" alt="Broken hourglass symbolizing time’s arrow" loading="lazy">
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Personal Meaning Section -->
-        <section id="personal" class="personal-section" aria-labelledby="personal-title">
-            <div class="container">
-                <h2 id="personal-title">What Entropy Means to Me</h2>
-
-                <div class="personal-content">
-                    <div class="personal-reflection">
-                        <h3>A Personal Journey</h3>
-                        <p>When I first encountered entropy in physics class, it seemed like just another abstract formula. But the more I explored it, the more I realized it's everywhere—in my daily life, my relationships, my creative work, and my understanding of existence.</p>
-
-                        <h4>Entropy in Daily Life</h4>
-                        <p>My room doesn't clean itself. My notes don't organize themselves. My digital files accumulate in chaotic folders. This isn't laziness—it's entropy. Maintaining order requires constant energy input. The moment I stop actively organizing, disorder naturally increases.</p>
-
-                        <h4>Entropy in Relationships</h4>
-                        <p>Relationships require work. Without effort, communication breaks down, misunderstandings accumulate, and connections fade. Like thermodynamic systems, relationships naturally drift toward disorder unless we actively maintain them through conversation, shared experiences, and mutual understanding.</p>
-
-                        <h4>Entropy in Creativity</h4>
-                        <p>As a creator, I've learned to embrace entropy. The blank page is low entropy—pure potential but no information. The creative process increases entropy: ideas scatter, drafts multiply, chaos reigns. But from this disorder emerges something new. Perhaps creativity is about channeling entropy productively.</p>
-
-                        <h4>Entropy and Acceptance</h4>
-                        <p>Understanding entropy has taught me acceptance. Not everything can be preserved. Not every system can be maintained. Change is inevitable. Decay is natural. The coffee will cool. The building will crumble. The star will die. And that's okay.</p>
-
-                        <p class="personal-insight">Entropy isn't the enemy—it's the nature of reality. Fighting it is futile. Understanding it is liberating. Working with it is wisdom.</p>
+                    <div class="definition-image">
+                        <img src="public/assets/thermodynamics-heat-dispersal.png"
+                             alt="Heat spreading from a hot object into its surroundings" loading="lazy">
                     </div>
                 </div>
-            </div>
-        </section>
+            </article>
 
-        <!-- Visual Exploration Section -->
-        <section id="visual" class="visual-section" aria-labelledby="visual-title">
-            <div class="container">
-                <h2 id="visual-title">Visual Exploration</h2>
-                <p class="section-intro">Entropy manifests in countless ways across different domains. Here are visual representations of how order transforms into disorder.</p>
+            <article class="definition-card">
+                <div class="definition-content reverse">
+                    <div class="definition-image">
+                        <img src="public/assets/information-entropy-decay.png" alt="Digital data breaking into noise"
+                             loading="lazy">
+                    </div>
+                    <div class="definition-text">
+                        <h4>Information Theory</h4>
+                        <p>Claude Shannon introduced <strong>information entropy</strong> in 1948 as a measure of
+                            uncertainty or unpredictability in information content. In this context, entropy quantifies
+                            the average amount of information needed to describe a random variable.</p>
+                        <p>High entropy means high unpredictability—like a truly random sequence of coin flips. Low
+                            entropy means predictability—like a message with repeating patterns. This concept is
+                            fundamental to data compression, cryptography, and understanding communication systems.</p>
+                        <p class="formula" role="img"
+                           aria-label="Shannon entropy formula: H equals negative sum of probability times log probability">
+                            H = -Σ p(x) log p(x)</p>
+                    </div>
+                </div>
+            </article>
 
-                <div class="visual-grid">
-                    <figure class="visual-item">
-                        <img src="public/assets/hero-entropy-order-to-chaos.png" alt="Progression from organized geometric shapes to chaotic particles showing entropy increase" loading="lazy">
-                        <figcaption>
-                            <h3>Order to Chaos</h3>
-                            <p>The fundamental transformation: organized structures dissolving into randomness</p>
-                        </figcaption>
-                    </figure>
+            <article class="definition-card">
+                <h3>Philosophical Implications</h3>
+                <div class="definition-content">
+                    <div class="definition-text">
+                        <h4>Time's Arrow</h4>
+                        <p>Entropy provides a thermodynamic arrow of time—a fundamental asymmetry that distinguishes
+                            past from future. While the microscopic laws of physics are time-reversible, entropy gives
+                            us a macroscopic direction: the future is the direction of increasing entropy.</p>
+                        <p>This raises profound questions: Why did the universe begin in a low-entropy state? Is the
+                            heat death of the universe—maximum entropy—inevitable? What does this mean for free will,
+                            consciousness, and the nature of existence itself?</p>
+                    </div>
+                    <div class="definition-image">
+                        <img src="public/assets/times-arrow-irreversibility.png"
+                             alt="Broken hourglass symbolizing time’s arrow" loading="lazy">
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
 
-                    <figure class="visual-item">
-                        <img src="public/assets/thermodynamics-heat-dispersal.png" alt="Heat energy dispersing from a concentrated source into the environment" loading="lazy">
-                        <figcaption>
-                            <h3>Energy Dispersal</h3>
-                            <p>Thermal energy naturally spreads from hot to cold, never the reverse</p>
-                        </figcaption>
-                    </figure>
+    <!-- Personal Meaning Section -->
+    <section id="personal" class="personal-section" aria-labelledby="personal-title">
+        <div class="container">
+            <h2 id="personal-title">What Entropy Means to Me</h2>
 
-                    <figure class="visual-item">
-                        <img src="public/assets/information-entropy-decay.png" alt="Digital information degrading into noise and corrupted data" loading="lazy">
-                        <figcaption>
-                            <h3>Information Decay</h3>
-                            <p>Data corruption and signal degradation as information entropy increases</p>
-                        </figcaption>
-                    </figure>
+            <div class="personal-content">
+                <div class="personal-reflection">
+                    <h3>A Personal Journey</h3>
+                    <p>When I first encountered entropy in physics class, it seemed like just another abstract formula.
+                        But the more I explored it, the more I realized it's everywhere—in my daily life, my
+                        relationships, my creative work, and my understanding of existence.</p>
 
-                    <figure class="visual-item">
-                        <img src="public/assets/times-arrow-irreversibility.png" alt="Broken hourglass symbolizing the irreversible flow of time" loading="lazy">
-                        <figcaption>
-                            <h3>Time's Arrow</h3>
-                            <p>The irreversible direction of time, defined by increasing entropy</p>
-                        </figcaption>
-                    </figure>
+                    <h4>Entropy in Daily Life</h4>
+                    <p>My room doesn't clean itself. My notes don't organize themselves. My digital files accumulate in
+                        chaotic folders. This isn't laziness—it's entropy. Maintaining order requires constant energy
+                        input. The moment I stop actively organizing, disorder naturally increases.</p>
+
+                    <h4>Entropy in Relationships</h4>
+                    <p>Relationships require work. Without effort, communication breaks down, misunderstandings
+                        accumulate, and connections fade. Like thermodynamic systems, relationships naturally drift
+                        toward disorder unless we actively maintain them through conversation, shared experiences, and
+                        mutual understanding.</p>
+
+                    <h4>Entropy in Creativity</h4>
+                    <p>As a creator, I've learned to embrace entropy. The blank page is low entropy—pure potential but
+                        no information. The creative process increases entropy: ideas scatter, drafts multiply, chaos
+                        reigns. But from this disorder emerges something new. Perhaps creativity is about channeling
+                        entropy productively.</p>
+
+                    <h4>Entropy and Acceptance</h4>
+                    <p>Understanding entropy has taught me acceptance. Not everything can be preserved. Not every system
+                        can be maintained. Change is inevitable. Decay is natural. The coffee will cool. The building
+                        will crumble. The star will die. And that's okay.</p>
+
+                    <p class="personal-insight">Entropy isn't the enemy—it's the nature of reality. Fighting it is
+                        futile. Understanding it is liberating. Working with it is wisdom.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="simulation" class="simulation-section" aria-labelledby="simulation-title">
-          <div class="container">
+    <!-- Visual Exploration Section -->
+    <section id="visual" class="visual-section" aria-labelledby="visual-title">
+        <div class="container">
+            <h2 id="visual-title">Visual Exploration</h2>
+            <p class="section-intro">Entropy manifests in countless ways across different domains. Here are visual
+                representations of how order transforms into disorder.</p>
+
+            <div class="visual-grid">
+                <figure class="visual-item">
+                    <img src="public/assets/hero-entropy-order-to-chaos.png"
+                         alt="Progression from organized geometric shapes to chaotic particles showing entropy increase"
+                         loading="lazy">
+                    <figcaption>
+                        <h3>Order to Chaos</h3>
+                        <p>The fundamental transformation: organized structures dissolving into randomness</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="visual-item">
+                    <img src="public/assets/thermodynamics-heat-dispersal.png"
+                         alt="Heat energy dispersing from a concentrated source into the environment" loading="lazy">
+                    <figcaption>
+                        <h3>Energy Dispersal</h3>
+                        <p>Thermal energy naturally spreads from hot to cold, never the reverse</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="visual-item">
+                    <img src="public/assets/information-entropy-decay.png"
+                         alt="Digital information degrading into noise and corrupted data" loading="lazy">
+                    <figcaption>
+                        <h3>Information Decay</h3>
+                        <p>Data corruption and signal degradation as information entropy increases</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="visual-item">
+                    <img src="public/assets/times-arrow-irreversibility.png"
+                         alt="Broken hourglass symbolizing the irreversible flow of time" loading="lazy">
+                    <figcaption>
+                        <h3>Time's Arrow</h3>
+                        <p>The irreversible direction of time, defined by increasing entropy</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulation" class="simulation-section" aria-labelledby="simulation-title">
+        <div class="container">
             <h2 id="simulation-title">A Structured System That Refuses to Collapse</h2>
 
             <p class="section-intro">
-              Entropy is often described as “disorder,” but many systems look chaotic while still obeying strict rules.
-              This simulation is my way of showing that tension: deterministic motion that keeps generating new configurations,
-              never settling into a perfectly overlapping, “finished” state.
+                Entropy is often described as “disorder,” but many systems look chaotic while still obeying strict
+                rules.
+                This simulation is my way of showing that tension: deterministic motion that keeps generating new
+                configurations,
+                never settling into a perfectly overlapping, “finished” state.
             </p>
 
             <p>
-              Here, a large set of planes rotates around the central axes according to precise mathematical constraints.
-              They intersect, drift, and realign—sometimes appearing close to repetition—yet the system avoids total coincidence.
-              Visually, it sits in the middle ground between order and randomness: structured, but endlessly unfolding.
+                Here, a large set of planes rotates around the central axes according to precise mathematical
+                constraints.
+                They intersect, drift, and realign—sometimes appearing close to repetition—yet the system avoids total
+                coincidence.
+                Visually, it sits in the middle ground between order and randomness: structured, but endlessly
+                unfolding.
             </p>
 
-        <div class="embed embed-ggb">
-              <iframe
-                src="https://www.geogebra.org/material/iframe/id/szyz52rn/width/1200/height/700"
-                style="border:0;"
-                allowfullscreen
-                loading="lazy"
-                title="GeoGebra simulation: rotating planes around central axes">
-              </iframe>
+            <div class="embed embed-ggb">
+                <iframe
+                        src="https://www.geogebra.org/material/iframe/id/szyz52rn/width/1200/height/700"
+                        style="border:0;"
+                        allowfullscreen
+                        loading="lazy"
+                        title="GeoGebra simulation: rotating planes around central axes">
+                </iframe>
             </div>
 
             <p class="simulation-note">
-              In the next section, I connect this idea to entropy in information theory and physics: how rule-based systems can
-              still produce rising complexity, uncertainty, and irreversibility.
+                In the next section, I connect this idea to entropy in information theory and physics: how rule-based
+                systems can
+                still produce rising complexity, uncertainty, and irreversibility.
             </p>
-          </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="veritasium" class="veritasium-section" aria-labelledby="veritasium-title">
-          <div class="container">
+    <section id="veritasium" class="veritasium-section" aria-labelledby="veritasium-title">
+        <div class="container">
             <h2 id="veritasium-title">Entropy, Engines, and the Illusion of Reversibility</h2>
 
             <p class="section-intro">
-              A key insight that reshaped my understanding of entropy comes from a video by
-              <em>Veritasium</em>, which reframes entropy not as “messiness,” but as a problem of
-              probability, energy usefulness, and irreversible loss.
+                A key insight that reshaped my understanding of entropy comes from a video by
+                <em>Veritasium</em>, which reframes entropy not as “messiness,” but as a problem of
+                probability, energy usefulness, and irreversible loss.
             </p>
 
             <p>
-              In the video, a heat engine is used as the central example. The engine appears to
-              create order: it converts heat into motion, lifts weights, and performs useful work.
-              Locally, entropy can decrease. But this apparent victory is misleading.
+                In the video, a heat engine is used as the central example. The engine appears to
+                create order: it converts heat into motion, lifts weights, and performs useful work.
+                Locally, entropy can decrease. But this apparent victory is misleading.
             </p>
 
             <p>
-              Every real engine leaks energy. Friction, heat dissipation, and microscopic randomness
-              ensure that while order may emerge in one place, a larger amount of entropy is created
-              elsewhere. The universe keeps score globally, not locally.
+                Every real engine leaks energy. Friction, heat dissipation, and microscopic randomness
+                ensure that while order may emerge in one place, a larger amount of entropy is created
+                elsewhere. The universe keeps score globally, not locally.
             </p>
 
             <div class="embed embed-video">
-              <iframe
-                src="https://www.youtube.com/embed/DxL2HoqLbyA"
-                title="Veritasium — Entropy, Engines, and Time’s Arrow"
-                style="border:0;"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                loading="lazy">
-              </iframe>
+                <iframe
+                        src="https://www.youtube.com/embed/DxL2HoqLbyA"
+                        title="Veritasium — Entropy, Engines, and Time’s Arrow"
+                        style="border:0;"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        loading="lazy">
+                </iframe>
             </div>
 
             <p>
-              The engine example exposes a deeper truth: entropy is about the gradual loss of
-              <strong>usable energy</strong>. Once energy is evenly spread out, no engine—no matter
-              how clever—can extract work from it again. This is why entropy gives time a direction.
+                The engine example exposes a deeper truth: entropy is about the gradual loss of
+                <strong>usable energy</strong>. Once energy is evenly spread out, no engine—no matter
+                how clever—can extract work from it again. This is why entropy gives time a direction.
             </p>
 
             <p>
-              What makes this especially striking is that the underlying physical laws are reversible.
-              Nothing in Newton’s equations forbids entropy from decreasing. It simply never happens
-              on large scales because the number of high-entropy configurations overwhelms the low-entropy ones.
+                What makes this especially striking is that the underlying physical laws are reversible.
+                Nothing in Newton’s equations forbids entropy from decreasing. It simply never happens
+                on large scales because the number of high-entropy configurations overwhelms the low-entropy ones.
             </p>
 
             <p>
-              This perspective connects directly to the rotating-plane simulation above. Like the engine,
-              the system is fully deterministic. Nothing random is injected. Yet it never returns to a
-              perfectly overlapping state. Not because it cannot—but because such states are vanishingly rare.
+                This perspective connects directly to the rotating-plane simulation above. Like the engine,
+                the system is fully deterministic. Nothing random is injected. Yet it never returns to a
+                perfectly overlapping state. Not because it cannot—but because such states are vanishingly rare.
             </p>
 
             <p class="veritasium-note">
-              Entropy, then, is not the breakdown of rules. It is what happens when rules are allowed
-              to explore all their consequences.
+                Entropy, then, is not the breakdown of rules. It is what happens when rules are allowed
+                to explore all their consequences.
             </p>
-          </div>
-        </section>
+        </div>
+    </section>
 
 
-        <!-- Derivatives Section -->
-        <section id="derivatives" class="derivatives-section" aria-labelledby="derivatives-title">
-            <div class="container">
-                <h2 id="derivatives-title">Derivatives and Related Concepts</h2>
+    <!-- Derivatives Section -->
+    <section id="derivatives" class="derivatives-section" aria-labelledby="derivatives-title">
+        <div class="container">
+            <h2 id="derivatives-title">Derivatives and Related Concepts</h2>
 
-                <div class="derivatives-grid">
-                    <article class="derivative-card">
-                        <h3>Entropic (adjective)</h3>
-                        <p>Relating to or characterized by entropy; tending toward disorder.</p>
-                        <p class="example"><em>"The entropic decay of abandoned buildings reflects nature's reclamation."</em></p>
-                    </article>
+            <div class="derivatives-grid">
+                <article class="derivative-card">
+                    <h3>Entropic (adjective)</h3>
+                    <p>Relating to or characterized by entropy; tending toward disorder.</p>
+                    <p class="example"><em>"The entropic decay of abandoned buildings reflects nature's
+                        reclamation."</em></p>
+                </article>
 
-                    <article class="derivative-card">
-                        <h3>Entropically (adverb)</h3>
-                        <p>In a manner relating to entropy; with increasing disorder.</p>
-                        <p class="example"><em>"The system evolved entropically toward equilibrium."</em></p>
-                    </article>
+                <article class="derivative-card">
+                    <h3>Entropically (adverb)</h3>
+                    <p>In a manner relating to entropy; with increasing disorder.</p>
+                    <p class="example"><em>"The system evolved entropically toward equilibrium."</em></p>
+                </article>
 
-                    <article class="derivative-card">
-                        <h3>Negentropy</h3>
-                        <p>Negative entropy; a measure of order or organization in a system. Life itself is negentropic—it creates local order while increasing universal entropy.</p>
-                        <p class="example"><em>"Living organisms maintain negentropy by consuming energy."</em></p>
-                    </article>
+                <article class="derivative-card">
+                    <h3>Negentropy</h3>
+                    <p>Negative entropy; a measure of order or organization in a system. Life itself is negentropic—it
+                        creates local order while increasing universal entropy.</p>
+                    <p class="example"><em>"Living organisms maintain negentropy by consuming energy."</em></p>
+                </article>
 
-                    <article class="derivative-card">
-                        <h3>Maximum Entropy</h3>
-                        <p>The state of thermodynamic equilibrium where no energy gradients exist; the "heat death" of the universe.</p>
-                        <p class="example"><em>"At maximum entropy, all processes cease."</em></p>
-                    </article>
+                <article class="derivative-card">
+                    <h3>Maximum Entropy</h3>
+                    <p>The state of thermodynamic equilibrium where no energy gradients exist; the "heat death" of the
+                        universe.</p>
+                    <p class="example"><em>"At maximum entropy, all processes cease."</em></p>
+                </article>
 
-                    <article class="derivative-card">
-                        <h3>Entropy Production</h3>
-                        <p>The rate at which entropy increases in irreversible processes.</p>
-                        <p class="example"><em>"Friction generates entropy production through heat."</em></p>
-                    </article>
+                <article class="derivative-card">
+                    <h3>Entropy Production</h3>
+                    <p>The rate at which entropy increases in irreversible processes.</p>
+                    <p class="example"><em>"Friction generates entropy production through heat."</em></p>
+                </article>
 
-                    <article class="derivative-card">
-                        <h3>Statistical Entropy</h3>
-                        <p>Boltzmann's interpretation: S = k log W, where W is the number of microstates.</p>
-                        <p class="example"><em>"Statistical entropy connects microscopic and macroscopic descriptions."</em></p>
-                    </article>
-                </div>
+                <article class="derivative-card">
+                    <h3>Statistical Entropy</h3>
+                    <p>Boltzmann's interpretation: S = k log W, where W is the number of microstates.</p>
+                    <p class="example"><em>"Statistical entropy connects microscopic and macroscopic descriptions."</em>
+                    </p>
+                </article>
+            </div>
 
-                <div class="context-exploration">
-                    <h3>Entropy in Different Contexts</h3>
+            <div class="context-exploration">
+                <h3>Entropy in Different Contexts</h3>
 
-                    <div class="context-list">
-                        <div class="context-item">
-                            <h4>🔬 Physics & Chemistry</h4>
-                            <p>Thermodynamic entropy, Gibbs free energy, phase transitions, chemical equilibrium</p>
-                        </div>
+                <div class="context-list">
+                    <div class="context-item">
+                        <h4>🔬 Physics & Chemistry</h4>
+                        <p>Thermodynamic entropy, Gibbs free energy, phase transitions, chemical equilibrium</p>
+                    </div>
 
-                        <div class="context-item">
-                            <h4>💻 Computer Science</h4>
-                            <p>Data compression, cryptographic randomness, machine learning regularization, password strength</p>
-                        </div>
+                    <div class="context-item">
+                        <h4>💻 Computer Science</h4>
+                        <p>Data compression, cryptographic randomness, machine learning regularization, password
+                            strength</p>
+                    </div>
 
-                        <div class="context-item">
-                            <h4>🌍 Ecology</h4>
-                            <p>Ecosystem complexity, energy flow through food webs, biodiversity as low entropy</p>
-                        </div>
+                    <div class="context-item">
+                        <h4>🌍 Ecology</h4>
+                        <p>Ecosystem complexity, energy flow through food webs, biodiversity as low entropy</p>
+                    </div>
 
-                        <div class="context-item">
-                            <h4>🧠 Neuroscience</h4>
-                            <p>Brain entropy as consciousness measure, neural complexity, information integration</p>
-                        </div>
+                    <div class="context-item">
+                        <h4>🧠 Neuroscience</h4>
+                        <p>Brain entropy as consciousness measure, neural complexity, information integration</p>
+                    </div>
 
-                        <div class="context-item">
-                            <h4>📊 Economics</h4>
-                            <p>Economic entropy, wealth distribution, market efficiency, resource depletion</p>
-                        </div>
+                    <div class="context-item">
+                        <h4>📊 Economics</h4>
+                        <p>Economic entropy, wealth distribution, market efficiency, resource depletion</p>
+                    </div>
 
-                        <div class="context-item">
-                            <h4>🎨 Art & Culture</h4>
-                            <p>Aesthetic entropy, cultural decay and renewal, artistic disorder and meaning</p>
-                        </div>
+                    <div class="context-item">
+                        <h4>🎨 Art & Culture</h4>
+                        <p>Aesthetic entropy, cultural decay and renewal, artistic disorder and meaning</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Reflection Section -->
-        <section id="reflection" class="reflection-section" aria-labelledby="reflection-title">
-            <div class="container">
-                <h2 id="reflection-title">Final Reflection</h2>
+    <!-- Reflection Section -->
+    <section id="reflection" class="reflection-section" aria-labelledby="reflection-title">
+        <div class="container">
+            <h2 id="reflection-title">Final Reflection</h2>
 
-                <div class="reflection-content">
-                    <p class="reflection-text">Researching entropy has fundamentally changed how I perceive reality. It's not just a physics concept—it's a lens through which to understand everything from the cooling of stars to the decay of civilizations, from the corruption of digital files to the fading of memories.</p>
+            <div class="reflection-content">
+                <p class="reflection-text">Researching entropy has fundamentally changed how I perceive reality. It's
+                    not just a physics concept—it's a lens through which to understand everything from the cooling of
+                    stars to the decay of civilizations, from the corruption of digital files to the fading of
+                    memories.</p>
 
-                    <p class="reflection-text">The Second Law of Thermodynamics is often called the most depressing law in physics. Everything tends toward disorder. Everything decays. The universe marches inexorably toward heat death. But I've come to see beauty in this truth.</p>
+                <p class="reflection-text">The Second Law of Thermodynamics is often called the most depressing law in
+                    physics. Everything tends toward disorder. Everything decays. The universe marches inexorably toward
+                    heat death. But I've come to see beauty in this truth.</p>
 
-                    <div class="reflection-quote">
-                        <blockquote>
-                            "Entropy is time's arrow, but it's also life's challenge. Every moment we maintain order—in our minds, our work, our relationships—we're pushing back against the universe's natural tendency. We're creating temporary islands of negentropy in an ocean of chaos. And that's what makes existence meaningful."
-                        </blockquote>
-                    </div>
-
-                    <p class="reflection-text">Understanding entropy has taught me to value maintenance as much as creation, to appreciate the energy required to preserve what we have, and to accept that letting go is sometimes the natural course of things.</p>
-
-                    <p class="reflection-text">In the end, entropy reminds us that we're part of something larger—a universe unfolding according to fundamental laws. We can't stop entropy, but we can dance with it, work with it, and find meaning in the temporary order we create before it all returns to chaos.</p>
-
-                    <p class="reflection-signature" role="note">This exploration continues…</p>
+                <div class="reflection-quote">
+                    <blockquote>
+                        "Entropy is time's arrow, but it's also life's challenge. Every moment we maintain order—in our
+                        minds, our work, our relationships—we're pushing back against the universe's natural tendency.
+                        We're creating temporary islands of negentropy in an ocean of chaos. And that's what makes
+                        existence meaningful."
+                    </blockquote>
                 </div>
+
+                <p class="reflection-text">Understanding entropy has taught me to value maintenance as much as creation,
+                    to appreciate the energy required to preserve what we have, and to accept that letting go is
+                    sometimes the natural course of things.</p>
+
+                <p class="reflection-text">In the end, entropy reminds us that we're part of something larger—a universe
+                    unfolding according to fundamental laws. We can't stop entropy, but we can dance with it, work with
+                    it, and find meaning in the temporary order we create before it all returns to chaos.</p>
+
+                <p class="reflection-signature" role="note">This exploration continues…</p>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
 
-     <script>
-        const toggle = document.querySelector('.nav-toggle');
-        const navList = document.querySelector('.nav-list');
+<script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
 
-        toggle.addEventListener('click', () => {
-            const open = navList.classList.toggle('open');
-            toggle.setAttribute('aria-expanded', open);
-        });
-    </script>
+    toggle.addEventListener('click', () => {
+        const open = navList.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open);
+    });
+</script>
 </body>
 
 </html>
